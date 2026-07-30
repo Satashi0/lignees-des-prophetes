@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Une carte interactive des liens de parenté entre les prophètes, d'après les traditions abrahamiques.">
+  <title>Les lignées des Prophètes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <header class="hero" id="accueil">
+    <nav><a class="brand" href="#accueil"><span>✦</span> Lignées</a><a href="#arbre">Explorer l'arbre</a><a href="#repères">Repères</a></nav>
+    <div class="hero-copy"><p class="eyebrow">Une cartographie narrative</p><h1>Les lignées<br><em>des Prophètes.</em></h1><p class="intro">Un parcours visuel à travers les liens familiaux traditionnellement rapportés entre les prophètes des traditions abrahamiques.</p><a class="cta" href="#arbre">Découvrir les lignées <span>↓</span></a></div>
+    <div class="orb orb-one"></div><div class="orb orb-two"></div>
+  </header>
+  <main>
+    <section class="tree-section" id="arbre">
+      <div class="section-head"><div><p class="eyebrow">Explorer</p><h2>Une même histoire,<br>plusieurs rameaux.</h2></div><div class="legend"><span><i class="dot origin"></i> Ancêtre</span><span><i class="dot prophet"></i> Prophète</span><span><i class="dot branch"></i> Lignée</span></div></div>
+      <div class="controls"><label><span>⌕</span><input id="search" type="search" placeholder="Rechercher un prophète…"></label><div class="filter" role="group" aria-label="Filtrer les lignées"><button class="active" data-filter="all">Tous</button><button data-filter="adam">Adam</button><button data-filter="ibrahim">Ibrahim</button><button data-filter="imran">Imran</button></div></div>
+      <div class="tree-wrap"><div class="tree" id="tree">
+        <div class="generation gen-1"><article class="person ancestor searchable adam" data-name="Adam آدم"><p>Origine</p><h3>Adam</h3><small>آدم</small></article></div><div class="connector down"></div>
+        <div class="generation gen-2"><article class="person searchable adam" data-name="Seth Shîth"><p>Fils d'Adam</p><h3>Shîth</h3><small>Seth</small></article></div><div class="connector down"></div>
+        <div class="generation gen-3"><article class="person searchable adam" data-name="Noé Nûh"><p>Descendant</p><h3>Nûh</h3><small>Noé</small></article></div><div class="connector fork"></div>
+        <div class="generation triple"><article class="person branch searchable adam" data-name="Sem Sâm"><p>Fils de Nûh</p><h3>Sâm</h3><small>Sem</small></article><article class="person branch searchable adam" data-name="Cham Hâm"><p>Fils de Nûh</p><h3>Hâm</h3><small>Cham</small></article><article class="person branch searchable adam" data-name="Japhet Yâfith"><p>Fils de Nûh</p><h3>Yâfith</h3><small>Japhet</small></article></div><div class="connector down"></div>
+        <div class="generation gen-4"><article class="person ancestor searchable ibrahim" data-name="Abraham Ibrahim"><p>Lignée de Sâm</p><h3>Ibrahim</h3><small>Abraham</small></article></div><div class="connector fork"></div>
+        <div class="generation triple"><article class="person searchable ibrahim" data-name="Ismaël Ismâ'îl"><p>Fils d'Ibrahim</p><h3>Ismâ'îl</h3><small>Ismaël</small></article><article class="person searchable ibrahim" data-name="Isaac Ishâq"><p>Fils d'Ibrahim</p><h3>Ishâq</h3><small>Isaac</small></article><article class="person searchable ibrahim" data-name="Lot Lût"><p>Neveu d'Ibrahim</p><h3>Lût</h3><small>Lot</small></article></div><div class="connector fork wide"></div>
+        <div class="generation five"><article class="person searchable ibrahim" data-name="Muhammad Mohammed"><p>Descendant d'Ismâ'îl</p><h3>Muhammad</h3><small>محمد</small></article><article class="person searchable ibrahim" data-name="Jacob Ya'qûb Israël"><p>Fils d'Ishâq</p><h3>Ya'qûb</h3><small>Jacob · Israël</small></article><article class="person searchable ibrahim" data-name="Joseph Yûsuf"><p>Fils de Ya'qûb</p><h3>Yûsuf</h3><small>Joseph</small></article><article class="person searchable ibrahim" data-name="Moïse Mûsâ Aaron Hârûn"><p>Descendants de Ya'qûb</p><h3>Mûsâ & Hârûn</h3><small>Moïse & Aaron</small></article><article class="person searchable imran" data-name="Jésus Issa Marie Maryam Imran"><p>Lignée d'Imrân</p><h3>ʿÎsâ</h3><small>Jésus · fils de Maryam</small></article></div>
+      </div></div><p class="tree-note">La visualisation met en avant les filiations les plus connues. Certaines parentés diffèrent selon les sources et les traditions.</p>
+    </section>
+    <section class="guides" id="repères"><p class="eyebrow">Repères de lecture</p><div class="guide-grid"><article><span>01</span><h3>Une transmission</h3><p>La frise commence avec Adam et Nûh, figures fondatrices dans les récits monothéistes.</p></article><article><span>02</span><h3>Le carrefour d'Ibrahim</h3><p>Ibrahim relie des lignées majeures : Ismâ'îl, Ishâq et, par lui, une grande partie des prophètes bibliques.</p></article><article><span>03</span><h3>Des récits pluriels</h3><p>Les noms, filiations et chronologies sont présentés avec respect des différentes traditions abrahamiques.</p></article></div></section>
+  </main><footer><div class="brand"><span>✦</span> Lignées</div><p>Conçu comme une introduction visuelle et pédagogique.</p><a href="#accueil">Retour en haut ↑</a></footer><script src="script.js"></script>
+</body></html>
